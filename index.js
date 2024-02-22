@@ -1,4 +1,4 @@
-const fs = require("fs");
+import { writeFile } from "node:fs";
 let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
 function generateCodes(numChars, numCodes) {
@@ -24,9 +24,10 @@ function saveCodes(codes, fileName) {
     csv += code + ",";
   });
 
+  //remove last comma
   csv = csv.slice(0, -1);
 
-  fs.writeFile(fileName, csv, (err) => {
+  writeFile(fileName, csv, (err) => {
     if (err) {
       console.log(err);
     } else {

@@ -2,6 +2,7 @@
   "name": "code_generator",
   "version": "1.0.0",
   "description": "Generates random codes",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,8 +13,5 @@
   },
   "author": "Kigarde",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MISTOM/Code-Generation/issues"
-  },
   "homepage": "https://github.com/MISTOM/Code-Generation#readme"
 }
