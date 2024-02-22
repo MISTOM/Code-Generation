@@ -1,6 +1,12 @@
 import { writeFile } from "node:fs";
 let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
+/**
+ * Generates an array of codes
+ * @param {Number} numChars Character length of the code
+ * @param {Number} numCodes Number of codes to generate
+ * @returns {Array<String>} Array of codes
+ */
 function generateCodes(numChars, numCodes) {
   console.time("generateCodes"); //start timer
   let codes = [];
