@@ -2,7 +2,7 @@ import { writeFile } from "node:fs";
 let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
 function generateCodes(numChars, numCodes) {
-  console.time("generateCodes");
+  console.time("generateCodes"); //start timer
   let codes = [];
   for (let i = 0; i < numCodes; i++) {
     let code = "";
@@ -12,7 +12,7 @@ function generateCodes(numChars, numCodes) {
     }
     codes.push(code);
   }
-  console.timeEnd("generateCodes");
+  console.timeEnd("generateCodes"); //end timer
   return codes;
 }
 
