@@ -5,11 +5,12 @@ let chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
  * Generates an array of codes
  * @param {Number} numChars Character length of the code
  * @param {Number} numCodes Number of codes to generate
- * @returns {Array<String>} Array of codes
+ * @returns {String[]} Array of codes
  */
 function generateCodes(numChars, numCodes) {
   console.time("generateCodes"); //start timer
   let codes = [];
+
   for (let i = 0; i < numCodes; i++) {
     let code = "";
     for (let j = 0; j < numChars; j++) {
@@ -18,12 +19,14 @@ function generateCodes(numChars, numCodes) {
     }
     codes.push(code);
   }
+
   console.timeEnd("generateCodes"); //end timer
   return codes;
 }
 
 function saveCodes(codes, fileName) {
   console.time("saveCodes");
+
   let csv = "codes,";
 
   codes.forEach((code) => {

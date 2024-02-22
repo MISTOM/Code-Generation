@@ -13,5 +13,8 @@
   },
   "author": "Kigarde",
   "license": "ISC",
-  "homepage": "https://github.com/MISTOM/Code-Generation#readme"
+  "homepage": "https://github.com/MISTOM/Code-Generation#readme",
+  "devDependencies": {
+    "@types/node": "^20.11.19"
+  }
 }

@@ -4,7 +4,7 @@ This project is a simple code generator that generates a specified number of ran
 
 ## Installation
 
-First, clone the repository to your local machine:
+Clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/MISTOM/Code-Generation.git
@@ -13,7 +13,7 @@ git clone https://github.com/MISTOM/Code-Generation.git
 Then navigate to the project directory
 
 ```bash
-cd Code_Generator
+cd Code_Generation
 ```
 
 ## Usage
