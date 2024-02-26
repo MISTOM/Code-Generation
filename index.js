@@ -46,6 +46,6 @@ function saveCodes(codes, fileName) {
   console.timeEnd("saveCodes");
 }
 
-let codes = generateCodes(5, 1000000);
+let codes = generateCodes(10, 20000000);
 saveCodes(codes, "codes.csv");
 // console.log(codes);
